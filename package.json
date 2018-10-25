@@ -1,0 +1,29 @@
+{
+    "name": "discord-token-checker",
+    "version": "1.0.0",
+    "description": "Discord Token Checker for checking discord tokens!",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "request": "^2.88.0",
+      "fs": "^0.0.1-security",
+      "chalk": "^2.4.1"
+    },
+    "engines": {
+      "node": "8.12.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Lemons1337/Discord-Token-Checker"
+    },
+    "keywords": [
+      "discord spam",
+      "discord tokens",
+      "discord checker"
+    ],
+    "author": "Lemons1337",
+    "contributors": [],
+    "license": "MIT"
+  }
