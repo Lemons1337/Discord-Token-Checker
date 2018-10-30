@@ -39,12 +39,22 @@ class Checker {
             console.clear();
             var text = "";
             text += chalk.green(`Verified: ${verified.length}`);
-            text += " | ";
+            text += chalk.blue(" | ");
             text += chalk.yellow(`Unverified: ${unverified.length}`);
-            text += " | ";
+            text += chalk.blue(" | ");
             text += chalk.red(`Invalid: ${invalid.length}`);
+            var title = `Verified: ${verified.length} | Unverified: ${unverified.length} | Invalid: ${invalid.length}`;
             console.log(text);
+            setTitle(title);
         });
+    }
+}
+
+function setTitle(title) {
+    if (process.platform == 'win32') {
+        process.title = title;
+    } else {
+        process.stdout.write('\x1b]2;' + title + '\x1b\x5c');
     }
 }
 
