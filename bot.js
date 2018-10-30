@@ -44,18 +44,18 @@ class Checker {
             text += chalk.blue(" | ");
             text += chalk.red(`Invalid: ${invalid.length}`);
             var title = `Verified: ${verified.length} | Unverified: ${unverified.length} | Invalid: ${invalid.length}`;
-            console.log(text);
-            setTitle(title);
+            log(text, title);
         });
     }
 }
 
-function setTitle(title) {
+function log(text, title) {
     if (process.platform == 'win32') {
         process.title = title;
     } else {
         process.stdout.write('\x1b]2;' + title + '\x1b\x5c');
     }
+    console.log(text);
 }
 
 const Bot = {
