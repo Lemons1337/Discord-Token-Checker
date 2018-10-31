@@ -39,4 +39,4 @@ Feel free to change the timeout in config.json to fit your needs!
 
 ## Contact
 
-Telegram Chat: https://t.me/NanoTheDroid
+Telegram Chat: https://t.me/DiscordTools
