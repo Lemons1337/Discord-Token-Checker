@@ -40,3 +40,7 @@ Feel free to change the timeout in config.json to fit your needs!
 ## Contact
 
 Telegram Chat: https://t.me/DiscordTools
+
+## Donate
+
+Bitcoin: 1JKtC7rQNo23iA9p35XaovetKvs5RDF1S
